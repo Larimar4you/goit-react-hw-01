@@ -1,38 +1,32 @@
-import {
-  profileContainer,
-  profileWrapper,
-  profileImage,
-  profileUsername,
-  profileTag,
-  profileLocation,
-  profileList,
-  profileListItem,
-  profileListItemText,
-  profileListItemNumber,
-} from '../profile/Profile.module.css';
+import s from './Profile.module.css';
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <>
-      <div>
-        <div>
-          <img src={image} alt="User avatar" />
-          <p>{name}</p>
-          <p>@pmarica</p>
-          <p>Salvador, Brasil</p>
+      <div className={s.profileContainer}>
+        <div className={s.profileWrapper}>
+          <img
+            src={image}
+            alt="User avatar"
+            className={s.profileImage}
+            width="150"
+          />
+          <p className={s.profileUsername}>{name}</p>
+          <p className={s.profileTag}>@{tag}</p>
+          <p className={s.profileLocation}>{location}</p>
         </div>
-        <ul>
-          <li>
-            <span>Followers</span>
-            <span>1000</span>
+        <ul className={s.profileList}>
+          <li className={s.profileListItem}>
+            <span className={s.profileListText}>Followers: </span>
+            <span className={s.profileListText}>{stats.followers}</span>
           </li>
-          <li>
-            <span>Views</span>
-            <span>2000</span>
+          <li className={s.profileListItem}>
+            <span className={s.profileListText}>Views: </span>
+            <span className={s.profileListText}>{stats.views}</span>
           </li>
-          <li>
-            <span>Likes</span>
-            <span>{stats.followers}</span>
+          <li className={s.profileListItem}>
+            <span className={s.profileListText}>Likes: </span>
+            <span className={s.profileListText}>{stats.likes}</span>
           </li>
         </ul>
       </div>

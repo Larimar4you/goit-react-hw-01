@@ -5,4 +5,14 @@
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: lightblue;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.profileUserName {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
 }

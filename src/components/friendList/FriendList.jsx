@@ -1,4 +1,4 @@
-import FriendListItem from '../friendList/friendListItem/FriendListItem';
+import FriendListItem from './FriendListItem/FriendListItem';
 import {
   friendContainer,
   friendsList,
