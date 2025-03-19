@@ -1,0 +1,22 @@
+.friendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.friendsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.friendsListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 12px;
+}
