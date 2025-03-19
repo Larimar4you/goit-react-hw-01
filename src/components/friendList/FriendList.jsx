@@ -1,16 +1,12 @@
 import FriendListItem from './FriendListItem/FriendListItem';
-import {
-  friendContainer,
-  friendsList,
-  friendsListItem,
-} from './FriendList.module.css';
+import styles from './FriendList.module.css'; // <--- тут мы импортируем как объект
 
 function FriendList({ friends }) {
   return (
-    <div className={friendContainer}>
-      <ul className={friendsList}>
+    <div className={styles.friendContainer}>
+      <ul className={styles.friendsList}>
         {friends.map(friend => (
-          <li className={friendsListItem} key={friend.id}>
+          <li className={styles.friendsListItem} key={friend.id}>
             <FriendListItem friend={friend} />
           </li>
         ))}
