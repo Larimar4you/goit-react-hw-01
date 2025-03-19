@@ -1,0 +1,23 @@
+.friendContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.friendsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+
+.friendsListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

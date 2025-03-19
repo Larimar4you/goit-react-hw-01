@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './FriendListItem.module.css';
 
-const FriendListItem = ({ friend }) => {
-  const { avatar, name, isOnline } = friend;
-
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <div className={styles.card}>
       <img src={avatar} alt="Avatar" width="48" className={styles.avatar} />
@@ -19,6 +17,6 @@ const FriendListItem = ({ friend }) => {
       </div>
     </div>
   );
-};
+}
 
 export default FriendListItem;
