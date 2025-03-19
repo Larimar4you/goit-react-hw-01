@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Profile
-        userName={userData.username}
+        name={userData.username}
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}

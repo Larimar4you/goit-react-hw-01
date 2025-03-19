@@ -1,18 +1,73 @@
 .profileContainer {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: lightblue;
-  width: 50%;
-  margin: 0 auto;
+  list-style: none;
+  width: 300px;
+  margin: 50px auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.profileUserName {
-  font-size: 24px;
+.profileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: #2f2f2f;
+}
+
+.profileUsername {
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
   color: #000;
+}
+
+.profileTag {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.profileLocation {
+  font-size: 16px;
+  color: #888;
+}
+
+.profileList {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #e5e5e5;
+  border-top: 1px solid #999;
+}
+
+.profileListItem {
+  flex: 1;
+  padding: 15px;
+  border-right: 1px solid #999;
+}
+
+.profileListItem:last-child {
+  border-right: none;
+}
+
+.profileListText {
+  display: block;
+  font-size: 14px;
+  color: #000;
+}
+
+.profileListText:last-child {
+  font-weight: 700;
+  font-size: 16px;
 }
