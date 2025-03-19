@@ -1,3 +1,16 @@
+import {
+  profileContainer,
+  profileWrapper,
+  profileImage,
+  profileUsername,
+  profileTag,
+  profileLocation,
+  profileList,
+  profileListItem,
+  profileListItemText,
+  profileListItemNumber,
+} from '../profile/Profile.module.css';
+
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <>
