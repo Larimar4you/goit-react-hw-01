@@ -1,2 +1,31 @@
+.transactionsTable {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  width: 470px;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-top: 20px;
+}
 
+.transactionsTableHead th {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
 
+.transactionsTableBody td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  color: rgb(0, 117, 121);
+}
+
+.transactionsTableBody tr:nth-child(odd) {
+  background-color: #242424;
+}
+
+.transactionsTableBody tr:nth-child(even) {
+  background-color: whitesmoke;
+}
