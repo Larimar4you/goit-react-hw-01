@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TransactionHistory = () => {
+const TransactionHistory = ({ items }) => {
   return <div>TransactionHistory</div>;
 };
 
