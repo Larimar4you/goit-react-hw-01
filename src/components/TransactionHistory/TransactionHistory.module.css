@@ -21,3 +21,6 @@
 .table tbody tr:nth-child(even) {
   background-color: #f3f3f3;
 }
+.rowAlt {
+  background-color: #f3f3f3;
+}
